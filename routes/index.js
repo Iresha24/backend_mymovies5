@@ -10,7 +10,7 @@ const options = {
       Authorization: `Bearer ${API_KEY}`
     }
   };
-
+//p
 
 router.get('/movies', (req, res) => {
         fetch('https://api.themoviedb.org/3/discover/movie', options)
