@@ -22,9 +22,9 @@ router.get('/movies', (req, res) => {
         const newMovie = {
             title: key.title,
             overview: key.overview.slice(0,250) +"...",
-            poster: urlImage + key.poster_path,
-            voteCount: key.vote_count,
-            voteAverage: key.vote_average, 
+            poster_path: urlImage + key.poster_path,
+            vote_count: key.vote_count,
+            vote_average: key.vote_average, 
         }
         formatedData.push(newMovie)
 
